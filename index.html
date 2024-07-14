@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame.pic</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon Font Awesome -->
+    <script src="https://kit.fontawesome.com/8028fbc1f8.js" crossorigin="anonymous"></script>
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nova+Mono&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container" id="home">
+            <a href="#home" class="navbar-brand">Frame.Pic</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar1" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#mymodal"="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Home Section-->
+    <!--Slider -->
+    <section id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="myslider">
+            <!-- carousel -->
+            <ol class="carousel-indicators">
+                <button data-bs-target="#myslider" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="1"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="2"></button>
+                <button data-bs-target="#myslider" data-bs-slide-to="3"></button>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="carousel-caption d-sm-block">
+                        <h1 class="display-4">Scenery</h1>
+                        <p>Immerse yourself in the breathtaking landscapes of the unseen in our nation and let your mind wander in the heaven on earth.</p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2">
+                    <div class="carousel-caption d-sm-block">
+                        <h1 class="display-4">Flower</h1>
+                        <p>Stay connected with enchanted beauty of nature and embraces the gorgeousness of blossoms throughout every season, offering a colorful and captivating scents of floral.</p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3">
+                    <div class="carousel-caption d-sm-block">
+                        <h1 class="display-4">Animal</h1>
+                        <p>Preserve your cherished moments by capturing stunning photographs of your beloved animals during your journey, keeping the memories as precious as ever.</p>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-4">
+                    <div class="carousel-caption d-sm-block">
+                        <h1 class="display-4">Nature</h1>
+                        <p>Embark on a journey to the most extraordinary destinations across the country and savor a wonderfully unique sense of nature alongside us.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ปุ่มควบคุม slide-->
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#myslider">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#myslider">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section id="service" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fa-solid fa-camera fa-3x mb-2"></i>
+                    <h3>Take a Pic</h3>
+                    <p>Our extensive experience in the field of photography ensures your complete satisfaction with images of your family or loved ones.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fa-solid fa-plane fa-3x mb-2"></i>
+                    <h3>Travel</h3>
+                    <p>Our service provides tour guidance with heartwarming and passionate determination.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fa-solid fa-person-walking-luggage fa-3x mb-2"></i>
+                    <h3>Trip & Pic</h3>
+                    <p>Break no more sweat! After you purchase this service, you will gain access to our expert personal guide, who can provide you the most out of your exceptional journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section-->
+    <section id="about">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container pt-5">
+                        <h1>About</h1>
+                        <p>We, as the expertise in photography company, can ensure the quality of our services with upcoming explosive amount of reviews throughout notorious online platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="p-5">
+        <div class="container">
+            <h1 class="text-center">My Gallery</h1>
+
+            <div class="row mt-4">
+                <!-- Image row 1-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/02/22/36/easter-2197043_640.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2021/03/04/13/13/cherry-blossom-6068004_640.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2018/02/17/12/37/liverwort-3159876_1280.jpg" class="img-fluid">
+                </div>
+
+                <!-- Image row 2-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2023/12/07/10/54/winter-8435314_640.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2022/11/19/18/45/gray-geese-7602847_640.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/25/23/06/iceberg-8532935_640.jpg" class="img-fluid">
+                </div>
+
+                <!-- Image row 3-->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_640.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2023/10/23/14/36/leaves-8336237_640.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/11/12/46/border-collie-8501579_640.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- Pop-up Image -->
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="https://cdn.pixabay.com/photo/2017/04/02/22/36/easter-2197043_640.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-3 pb-0 bg-dark text-light">
+        <div class="footer-container d-flex justify-content-center">
+            <div class="footer-text pe-4">
+                <p>Copyright  &copy; Natcha Official 2024</p>
+            </div>
+            <div class="back-arrow">
+                <a href="#home"><i class="fa-solid fa-circle-up fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Me</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name="" id="" placeholder="Please text your e-mail" class="form-control mb-3 mt-2">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input type="text" name="" id="" placeholder="Please text your Title" class="form-control mb-3 mt-2">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Details</label>
+                        <textarea class="form-control mt-2" id="" cols="30" rows="10" placeholder="Please text your Details"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancle</button>
+                    <button class="btn btn-success">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
